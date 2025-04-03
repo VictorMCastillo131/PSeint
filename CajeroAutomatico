@@ -1,0 +1,67 @@
+Algoritmo Cajero_Automatico
+saldo_actual = 10000  
+bi_1000 = 0
+bi_500 = 0
+bi_200 = 0
+bi_100 = 0
+bi_50 = 0
+monedas_20 = 0
+monedas_10 = 0
+monedas_5  = 0
+monedas_1 = 0
+	
+	Escribir ""
+	Escribir "1. Consultar saldo"
+	Escribir "2. Retirar dinero"
+	Escribir "3. Salir"
+    Escribir "Ingrese el número de opción:"
+	Leer opcion
+    
+	Segun opcion Hacer
+	Caso 1:
+	Escribir "Su saldo actual es: ", saldo_actual
+	Caso 2:
+	Escribir "Ingrese el monto a retirar:"
+	Leer monto
+	Si  (monto > 8000) Entonces
+		Escribir "Dinero insuficiente en su cuenta"
+		si saldo_actual = 0 Entonces
+			Escribir "Dinero insuficiente"
+		FinSi
+	Sino
+	saldo_actual <- saldo_actual - monto
+	Escribir "Su saldo actual es: ", saldo_actual
+	billetes_1000 <- trunc (monto / 1000)
+	monto <- monto MOD 1000
+	billetes_500 <- trunc ( monto / 500)
+	monto <- monto MOD 500
+	billetes_200 <- trunc (monto / 200)
+	monto <- monto MOD 200
+    billetes_100 <- trunc (monto / 100)
+	monto <- monto MOD 100
+	billetes_50 <- trunc (monto / 50)
+	monto <- monto MOD 50
+    monedas_20 <- trunc (monto / 20)
+	monto <- monto MOD 20
+	monedas_10 <- trunc (monto / 10)
+	monto <- monto MOD 10
+	monedas_5 <- trunc (monto / 5)
+	monto <- monto MOD 5
+	monedas_1 <- trunc (monto / 1)
+	monto <- monto MOD 1
+	
+    Escribir "se entregan:"
+	Escribir billetes_1000, " billetes de $1000"
+	Escribir billetes_500, " billetes de $500"
+    Escribir billetes_200, " billetes de $200"
+	Escribir billetes_100, " billetes de $100"
+	Escribir billetes_50, " billetes de $50"
+	Escribir monedas_20, " monedas de $20"
+    Escribir monedas_10, " monedas de $10"
+	Escribir monedas_5, " monedas de $5"
+	Escribir monedas_1, " monedas de $1"
+Fin Si
+FinSegun
+	
+	Fin Algoritmo
+
