@@ -1,4 +1,5 @@
 Algoritmo Cajero_Automatico
+
 saldo_actual = 10000  
 bi_1000 = 0
 bi_500 = 0
@@ -61,6 +62,7 @@ monedas_1 = 0
 	Escribir monedas_5, " monedas de $5"
 	Escribir monedas_1, " monedas de $1"
 Fin Si
+
 FinSegun
 	
 	Fin Algoritmo
