@@ -6,7 +6,7 @@ Algoritmo x_TablaDeMultiplicar
 		r=t*x
 		Imprimir t "*" x "=" r
 		x=x+1
-		
 	FinMientras
+
 FinAlgoritmo
 
