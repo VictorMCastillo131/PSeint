@@ -1,7 +1,7 @@
 Algoritmo Cajero_Automatico
 
 
-saldo_actual = 10000  
+saldo_actual= 10000   
 bi_1000 = 0
 bi_500 = 0
 bi_200 = 0
